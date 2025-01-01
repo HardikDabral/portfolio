@@ -35,14 +35,19 @@ const Footer = () => {
             </div>
             <div className='flex items-center justify-center py-3 md:gap-3 gap-6'>
                 {socialMedia.map((profile) => (
-                    <div key={profile.id} className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'>
-                        <img 
-                            src={profile.img} alt={profile.id} width={20} height={20}
+                    <div
+                        key={String(profile.id)} // Ensure key is a string
+                        className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'
+                    >
+                        <img
+                            src={profile.img}
+                            alt={profile.id.toString()} // Convert id to string for alt attribute
+                            width={20}
+                            height={20}
                         />
                     </div>
-                ))
+                ))}
 
-                }
             </div>
         </footer>
     )
