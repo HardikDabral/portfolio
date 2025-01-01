@@ -11,16 +11,16 @@ const Approach = () => {
         My <span className="text-purple">approach</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
-        <Card title="Planning & Strategy" icon={<AceternityIcon order="phase 1" />}
-          description="Mayank gawar"
+        <Card title="Planning and Strategy" icon={<AceternityIcon order="phase 1" />}
+          description="In this phase, the focus is on defining the goals and objectives of the project. It involves brainstorming ideas, researching industry trends, and developing a roadmap that ensures alignment with the client’s vision. Careful planning reduces risks and ensures the project is executed efficiently."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Nisha is Munni" icon={<AceternityIcon order="phase 2" />}
-          description="kovidh gawar">
+        <Card title="design Implementation" icon={<AceternityIcon order="phase 2" />}
+          description="This stage is about translating the plan into reality. Using modern technologies, designs are created to provide seamless user experiences. Code implementation begins, ensuring scalability, responsiveness, and performance optimization while integrating required APIs and services.">
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -33,8 +33,8 @@ const Approach = () => {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card title="Munni is Aditi" icon={<AceternityIcon order="phase 3" />}
-          description="Subham gawar">
+        <Card title="Testing and Delivery" icon={<AceternityIcon order="phase 3" />}
+          description="The final phase focuses on rigorous testing to identify and fix any bugs or inconsistencies. Quality assurance ensures the product meets the highest standards before deployment. Once the project passes all benchmarks, it is delivered to the client with proper documentation and support.">
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
